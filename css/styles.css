@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+body {
+  background-color: #1f2632;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: 1.3em;
+}
+.heading {
+  text-align: center;
+  font-size: 1rem;
+  margin-block-start: 3em;
+  color: #52ffa8;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+}
+.container {
+  background-color: #323a49;
+  position: relative;
+  padding-block-end: 3em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  width: 19em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advice_text {
+  text-align: center;
+  color: #cee3e9;
+  font-size: 1.5rem;
+  padding-inline: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.divider {
+  display: block;
+  width: 16em;
+  height: 1em;
+  margin-inline: auto;
+  margin-block-start: 0.8em;
+}
+.dice_button {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: #52ffa8;
+  width: 3em;
+  height: 3em;
+  margin-inline: auto;
+  position: absolute;
+  bottom: -1.5em;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+}
+.dice_button:hover,
+.dice_image:hover {
+  transform: rotate(180deg);
+  transition: transform, 0.7s ease-in-out;
+  box-shadow: 0 0 1em #52ffa8;
+}
+@media (min-width: 800px) {
+  .container {
+    width: 25em;
+    gap: 5px;
+  }
+  .advice_text {
+    height: 100%;
+    padding-block-end: 0;
+    margin: 0;
+  }
+  .divider {
+    width: 20em;
+  }
+}
