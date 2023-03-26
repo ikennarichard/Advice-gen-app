@@ -45,7 +45,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Stylus
-
+- React
 
 ## Author
 
