@@ -16,7 +16,7 @@ dice.addEventListener('click', displayAdvice);
 
 async function displayAdvice() {
 
-    let advice = await fetch('https://api.adviceslip.com/advice', {cache: "no-cache"})
+    let advice = await fetch('https://api.adviceslip.com/advice')
 
     if (!advice.ok) {
 		throw new Error(`HTTP error! status: ${advice.status}`);
