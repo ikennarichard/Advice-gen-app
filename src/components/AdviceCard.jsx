@@ -22,8 +22,8 @@ export default function AdviceCard() {
     <h1 className="heading">ADVICE #<span id="advice_id">{adviceId}</span></h1>
     <p className="advice_text">{advice}</p>
     <picture>
-      <source media="(min-width:800px)" srcSet="./src/assets/pattern-divider-desktop.svg"/>
-      <img src="./src/assets/pattern-divider-mobile.svg" alt="" className="divider"/>
+      <source media="(min-width:800px)" srcSet="/assets/pattern-divider-desktop.svg"/>
+      <img src="/assets/pattern-divider-mobile.svg" alt="" className="divider"/>
     </picture>
     <Button displayAdvice={displayAdvice}/>
   </div>
