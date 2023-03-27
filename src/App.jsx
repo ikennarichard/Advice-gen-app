@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import AdviceCard from './components/AdviceCard';
 
 function App() {
