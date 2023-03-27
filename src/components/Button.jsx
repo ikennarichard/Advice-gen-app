@@ -3,6 +3,6 @@ export default function Button({displayAdvice}) {
     displayAdvice()
   }
   return (
-    <button className="dice_button"><img src="./src/images/icon-dice.svg" alt="" className="dice_image" onClick={handleClick}/></button>
+    <button className="dice_button"><img src="../src/assets/icon-dice.svg" alt="" className="dice_image" onClick={handleClick}/></button>
   );
 }
