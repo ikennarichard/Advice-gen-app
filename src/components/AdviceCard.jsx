@@ -6,17 +6,14 @@ export default function AdviceCard() {
   const [adviceId, setAdviceId] = useState('117');
 
   async function displayAdvice() {
-
-    let advice = await fetch('https://api.adviceslip.com/advice')
+    let advice = await fetch('https://api.adviceslip.com/advice');
 
     if (!advice.ok) {
 		throw new Error(`HTTP error! status: ${advice.status}`);
 	}
 
     let response = await advice.json();
-
     setAdvice(`"${response.slip.advice}"`);
-
     setAdviceId(response.slip.id);
 };
 
